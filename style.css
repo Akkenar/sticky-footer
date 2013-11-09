@@ -1,0 +1,40 @@
+/*
+ Layout with Sticky footer
+ */
+ * {
+  margin: 0;
+}
+
+/* Add any application specific container here, such as form for .NET or FOX */
+html, body {
+  height: 100%;
+}
+
+/* Border box for the layout elements */
+main, header, footer {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+footer {
+  height: 40px;
+}
+
+header {
+  height: 60px;
+}
+
+main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+
+  /* Must match header's size */
+  padding-top: 60px;
+  margin-top: -60px;
+
+  /* Must match footer's size */
+  margin-bottom: -40px;
+  padding-bottom: 40px;
+}
